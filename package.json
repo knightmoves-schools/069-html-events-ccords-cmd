@@ -5,7 +5,8 @@
     "test": "jest --reporters default --reporters jest-summarizing-reporter"
   },
   "dependencies": {
-    "puppeteer": "^19.1.2"
+    "puppeteer": "^19.1.2",
+    "jsdom": "^21.1.0"
   },
   "devDependencies": {
     "jest": "^29.2.1",

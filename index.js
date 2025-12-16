@@ -11,4 +11,4 @@ function calculateSquare(){
 }
 
 document.getElementById('calculate').addEventListener('click', calculateSquare);
-}
+
