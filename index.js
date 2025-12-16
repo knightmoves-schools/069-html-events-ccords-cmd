@@ -1,10 +1,14 @@
 function calculateSquare(){
     let value = document.getElementById('number').value;
     let result = document.getElementById('result');
-document.getElementById('result').innerHTML = value*value;
-if (value != number) {
-    document.getElementById('result').innerHTML = 'Invalid, please enter a number';
+    const num = Number(value);
+    if (value.trim() === '' || isNaN(num)) {
+        result.innerHTML = 'Invalid, please enter a number';
+        return;
+    }
+
+    result.innerHTML = String(num * num);
 }
-    //add code here
-    
+
+document.getElementById('calculate').addEventListener('click', calculateSquare);
 }
